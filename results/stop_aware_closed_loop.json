@@ -1,0 +1,966 @@
+{
+  "evaluation_protocol": {
+    "split": "val_seen",
+    "scene": "17DRP5sb8fy",
+    "num_episodes": 6,
+    "num_models": 7,
+    "success_distance": 3.0,
+    "max_steps": 200,
+    "policy_has_goal_position": false,
+    "policy_has_reference_path": false
+  },
+  "winner": "stop_aware_epoch_02",
+  "ranking": [
+    "stop_aware_epoch_02",
+    "stop_aware_epoch_05",
+    "v2_last",
+    "stop_aware_epoch_03",
+    "v1_best_accuracy",
+    "stop_aware_epoch_01",
+    "stop_aware_epoch_04"
+  ],
+  "results": {
+    "v1_best_accuracy": {
+      "checkpoint_name": "v1_best_accuracy",
+      "checkpoint_path": "/home/mystery/habitat-work/checkpoints_dagger/vln_dagger_best_accuracy.pth",
+      "checkpoint_epoch": 2,
+      "validation_loss": 0.9784510626395544,
+      "validation_accuracy": 0.6233333333333333,
+      "num_episodes": 6,
+      "average_success": 0.16666666666666666,
+      "average_spl": 0.156766361777161,
+      "average_distance_to_goal": 7.935857216517131,
+      "episodes": [
+        {
+          "episode_id": "97",
+          "trajectory_id": "1154",
+          "prompt": "Walk past curved sofa. Walk past bed. Wait at bathroom door threshold.",
+          "steps": 37,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 12.548773765563965,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 31,
+            "TURN_LEFT": 4,
+            "TURN_RIGHT": 1
+          }
+        },
+        {
+          "episode_id": "328",
+          "trajectory_id": "3228",
+          "prompt": "Walk past  living room, walk past dining room, turn right, wait by gold room.",
+          "steps": 23,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 4.287999629974365,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 16,
+            "TURN_LEFT": 4,
+            "TURN_RIGHT": 2
+          }
+        },
+        {
+          "episode_id": "95",
+          "trajectory_id": "1154",
+          "prompt": "Enter the bedroom, wait at the door to the bathroom.",
+          "steps": 37,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 12.548773765563965,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 31,
+            "TURN_LEFT": 4,
+            "TURN_RIGHT": 1
+          }
+        },
+        {
+          "episode_id": "327",
+          "trajectory_id": "3228",
+          "prompt": "Turn left and go passed the painting. Continue passed the bar and turn right and then go through the left doorway.",
+          "steps": 21,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 4.786889553070068,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 14,
+            "TURN_LEFT": 4,
+            "TURN_RIGHT": 2
+          }
+        },
+        {
+          "episode_id": "326",
+          "trajectory_id": "3228",
+          "prompt": "Turn to the left and walk through the living room to the breakfast bar and dinning room. Walk through the dinning room and to the dark framed door on the left side of an alcove. Walk to the entrance of the dark framed door that opens to a gold seating area.",
+          "steps": 45,
+          "stopped": true,
+          "success": 1.0,
+          "spl": 0.9405981706629659,
+          "oracle_success": 0.0,
+          "distance_to_goal": 0.8939328193664551,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 37,
+            "TURN_LEFT": 4,
+            "TURN_RIGHT": 3
+          }
+        },
+        {
+          "episode_id": "96",
+          "trajectory_id": "1154",
+          "prompt": "Walk straight into the bedroom and around the bed. At the end of the bed take a left, and stop in front of the bathroom door.",
+          "steps": 37,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 12.548773765563965,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 31,
+            "TURN_LEFT": 4,
+            "TURN_RIGHT": 1
+          }
+        }
+      ],
+      "active_stop_rate": 1.0,
+      "successful_episode_ids": [
+        "326"
+      ],
+      "mean_num_steps": 33.333333333333336,
+      "success_change_vs_v1": 0.0,
+      "spl_change_vs_v1": 0.0,
+      "distance_change_vs_v1": 0.0
+    },
+    "v2_last": {
+      "checkpoint_name": "v2_last",
+      "checkpoint_path": "/home/mystery/habitat-work/checkpoints_dagger_v2/vln_dagger_v2_last.pth",
+      "checkpoint_epoch": 6,
+      "validation_loss": 1.1042007621129353,
+      "validation_accuracy": 0.5766666666666667,
+      "num_episodes": 6,
+      "average_success": 0.16666666666666666,
+      "average_spl": 0.16666666666666666,
+      "average_distance_to_goal": 7.9333255887031555,
+      "episodes": [
+        {
+          "episode_id": "97",
+          "trajectory_id": "1154",
+          "prompt": "Walk past curved sofa. Walk past bed. Wait at bathroom door threshold.",
+          "steps": 46,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 12.665460586547852,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 32,
+            "TURN_LEFT": 9,
+            "TURN_RIGHT": 4
+          }
+        },
+        {
+          "episode_id": "328",
+          "trajectory_id": "3228",
+          "prompt": "Walk past  living room, walk past dining room, turn right, wait by gold room.",
+          "steps": 24,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 3.827017068862915,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 18,
+            "TURN_LEFT": 4,
+            "TURN_RIGHT": 1
+          }
+        },
+        {
+          "episode_id": "95",
+          "trajectory_id": "1154",
+          "prompt": "Enter the bedroom, wait at the door to the bathroom.",
+          "steps": 46,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 12.665460586547852,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 32,
+            "TURN_LEFT": 9,
+            "TURN_RIGHT": 4
+          }
+        },
+        {
+          "episode_id": "327",
+          "trajectory_id": "3228",
+          "prompt": "Turn left and go passed the painting. Continue passed the bar and turn right and then go through the left doorway.",
+          "steps": 24,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 3.827017068862915,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 18,
+            "TURN_LEFT": 4,
+            "TURN_RIGHT": 1
+          }
+        },
+        {
+          "episode_id": "326",
+          "trajectory_id": "3228",
+          "prompt": "Turn to the left and walk through the living room to the breakfast bar and dinning room. Walk through the dinning room and to the dark framed door on the left side of an alcove. Walk to the entrance of the dark framed door that opens to a gold seating area.",
+          "steps": 35,
+          "stopped": true,
+          "success": 1.0,
+          "spl": 1.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 1.9495376348495483,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 26,
+            "TURN_LEFT": 4,
+            "TURN_RIGHT": 4
+          }
+        },
+        {
+          "episode_id": "96",
+          "trajectory_id": "1154",
+          "prompt": "Walk straight into the bedroom and around the bed. At the end of the bed take a left, and stop in front of the bathroom door.",
+          "steps": 46,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 12.665460586547852,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 32,
+            "TURN_LEFT": 9,
+            "TURN_RIGHT": 4
+          }
+        }
+      ],
+      "active_stop_rate": 1.0,
+      "successful_episode_ids": [
+        "326"
+      ],
+      "mean_num_steps": 36.833333333333336,
+      "success_change_vs_v1": 0.0,
+      "spl_change_vs_v1": 0.009900304889505662,
+      "distance_change_vs_v1": -0.0025316278139753123
+    },
+    "stop_aware_epoch_01": {
+      "checkpoint_name": "stop_aware_epoch_01",
+      "checkpoint_path": "/home/mystery/habitat-work/checkpoints_stop_aware/vln_stop_aware_epoch_01.pth",
+      "checkpoint_epoch": 1,
+      "validation_loss": 0.9639623020092646,
+      "validation_accuracy": 0.6066666666666667,
+      "num_episodes": 6,
+      "average_success": 0.0,
+      "average_spl": 0.0,
+      "average_distance_to_goal": 8.948387066523233,
+      "episodes": [
+        {
+          "episode_id": "97",
+          "trajectory_id": "1154",
+          "prompt": "Walk past curved sofa. Walk past bed. Wait at bathroom door threshold.",
+          "steps": 32,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 11.338871002197266,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 26,
+            "TURN_LEFT": 4,
+            "TURN_RIGHT": 1
+          }
+        },
+        {
+          "episode_id": "328",
+          "trajectory_id": "3228",
+          "prompt": "Walk past  living room, walk past dining room, turn right, wait by gold room.",
+          "steps": 18,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 5.536009788513184,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 11,
+            "TURN_LEFT": 4,
+            "TURN_RIGHT": 2
+          }
+        },
+        {
+          "episode_id": "95",
+          "trajectory_id": "1154",
+          "prompt": "Enter the bedroom, wait at the door to the bathroom.",
+          "steps": 32,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 11.338871002197266,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 26,
+            "TURN_LEFT": 4,
+            "TURN_RIGHT": 1
+          }
+        },
+        {
+          "episode_id": "327",
+          "trajectory_id": "3228",
+          "prompt": "Turn left and go passed the painting. Continue passed the bar and turn right and then go through the left doorway.",
+          "steps": 13,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 6.7852959632873535,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 6,
+            "TURN_LEFT": 4,
+            "TURN_RIGHT": 2
+          }
+        },
+        {
+          "episode_id": "326",
+          "trajectory_id": "3228",
+          "prompt": "Turn to the left and walk through the living room to the breakfast bar and dinning room. Walk through the dinning room and to the dark framed door on the left side of an alcove. Walk to the entrance of the dark framed door that opens to a gold seating area.",
+          "steps": 28,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 7.102405548095703,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 18,
+            "TURN_LEFT": 5,
+            "TURN_RIGHT": 4
+          }
+        },
+        {
+          "episode_id": "96",
+          "trajectory_id": "1154",
+          "prompt": "Walk straight into the bedroom and around the bed. At the end of the bed take a left, and stop in front of the bathroom door.",
+          "steps": 33,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 11.588869094848633,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 27,
+            "TURN_LEFT": 4,
+            "TURN_RIGHT": 1
+          }
+        }
+      ],
+      "active_stop_rate": 1.0,
+      "successful_episode_ids": [],
+      "mean_num_steps": 26.0,
+      "success_change_vs_v1": -0.16666666666666666,
+      "spl_change_vs_v1": -0.156766361777161,
+      "distance_change_vs_v1": 1.0125298500061026
+    },
+    "stop_aware_epoch_02": {
+      "checkpoint_name": "stop_aware_epoch_02",
+      "checkpoint_path": "/home/mystery/habitat-work/checkpoints_stop_aware/vln_stop_aware_epoch_02.pth",
+      "checkpoint_epoch": 2,
+      "validation_loss": 0.9656210283438365,
+      "validation_accuracy": 0.64,
+      "num_episodes": 6,
+      "average_success": 0.3333333333333333,
+      "average_spl": 0.3285367496028804,
+      "average_distance_to_goal": 7.359964827696483,
+      "episodes": [
+        {
+          "episode_id": "97",
+          "trajectory_id": "1154",
+          "prompt": "Walk past curved sofa. Walk past bed. Wait at bathroom door threshold.",
+          "steps": 36,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 11.751567840576172,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 28,
+            "TURN_LEFT": 5,
+            "TURN_RIGHT": 2
+          }
+        },
+        {
+          "episode_id": "328",
+          "trajectory_id": "3228",
+          "prompt": "Walk past  living room, walk past dining room, turn right, wait by gold room.",
+          "steps": 42,
+          "stopped": true,
+          "success": 1.0,
+          "spl": 1.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 0.8102182745933533,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 32,
+            "TURN_LEFT": 5,
+            "TURN_RIGHT": 4
+          }
+        },
+        {
+          "episode_id": "95",
+          "trajectory_id": "1154",
+          "prompt": "Enter the bedroom, wait at the door to the bathroom.",
+          "steps": 40,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 12.485631942749023,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 31,
+            "TURN_LEFT": 6,
+            "TURN_RIGHT": 2
+          }
+        },
+        {
+          "episode_id": "327",
+          "trajectory_id": "3228",
+          "prompt": "Turn left and go passed the painting. Continue passed the bar and turn right and then go through the left doorway.",
+          "steps": 17,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 5.785818099975586,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 10,
+            "TURN_LEFT": 4,
+            "TURN_RIGHT": 2
+          }
+        },
+        {
+          "episode_id": "326",
+          "trajectory_id": "3228",
+          "prompt": "Turn to the left and walk through the living room to the breakfast bar and dinning room. Walk through the dinning room and to the dark framed door on the left side of an alcove. Walk to the entrance of the dark framed door that opens to a gold seating area.",
+          "steps": 42,
+          "stopped": true,
+          "success": 1.0,
+          "spl": 0.9712204976172824,
+          "oracle_success": 0.0,
+          "distance_to_goal": 0.8387197852134705,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 34,
+            "TURN_LEFT": 4,
+            "TURN_RIGHT": 3
+          }
+        },
+        {
+          "episode_id": "96",
+          "trajectory_id": "1154",
+          "prompt": "Walk straight into the bedroom and around the bed. At the end of the bed take a left, and stop in front of the bathroom door.",
+          "steps": 40,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 12.487833023071289,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 31,
+            "TURN_LEFT": 6,
+            "TURN_RIGHT": 2
+          }
+        }
+      ],
+      "active_stop_rate": 1.0,
+      "successful_episode_ids": [
+        "328",
+        "326"
+      ],
+      "mean_num_steps": 36.166666666666664,
+      "success_change_vs_v1": 0.16666666666666666,
+      "spl_change_vs_v1": 0.17177038782571938,
+      "distance_change_vs_v1": -0.5758923888206482
+    },
+    "stop_aware_epoch_03": {
+      "checkpoint_name": "stop_aware_epoch_03",
+      "checkpoint_path": "/home/mystery/habitat-work/checkpoints_stop_aware/vln_stop_aware_epoch_03.pth",
+      "checkpoint_epoch": 3,
+      "validation_loss": 0.953903071085612,
+      "validation_accuracy": 0.6133333333333333,
+      "num_episodes": 6,
+      "average_success": 0.16666666666666666,
+      "average_spl": 0.16666666666666666,
+      "average_distance_to_goal": 9.694617291291555,
+      "episodes": [
+        {
+          "episode_id": "97",
+          "trajectory_id": "1154",
+          "prompt": "Walk past curved sofa. Walk past bed. Wait at bathroom door threshold.",
+          "steps": 35,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 11.480867385864258,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 27,
+            "TURN_LEFT": 5,
+            "TURN_RIGHT": 2
+          }
+        },
+        {
+          "episode_id": "328",
+          "trajectory_id": "3228",
+          "prompt": "Walk past  living room, walk past dining room, turn right, wait by gold room.",
+          "steps": 30,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 10.750590324401855,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 12,
+            "TURN_LEFT": 17,
+            "TURN_RIGHT": 0
+          }
+        },
+        {
+          "episode_id": "95",
+          "trajectory_id": "1154",
+          "prompt": "Enter the bedroom, wait at the door to the bathroom.",
+          "steps": 36,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 11.730234146118164,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 28,
+            "TURN_LEFT": 5,
+            "TURN_RIGHT": 2
+          }
+        },
+        {
+          "episode_id": "327",
+          "trajectory_id": "3228",
+          "prompt": "Turn left and go passed the painting. Continue passed the bar and turn right and then go through the left doorway.",
+          "steps": 42,
+          "stopped": true,
+          "success": 1.0,
+          "spl": 1.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 0.7431708574295044,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 32,
+            "TURN_LEFT": 5,
+            "TURN_RIGHT": 4
+          }
+        },
+        {
+          "episode_id": "326",
+          "trajectory_id": "3228",
+          "prompt": "Turn to the left and walk through the living room to the breakfast bar and dinning room. Walk through the dinning room and to the dark framed door on the left side of an alcove. Walk to the entrance of the dark framed door that opens to a gold seating area.",
+          "steps": 31,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 10.994049072265625,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 13,
+            "TURN_LEFT": 17,
+            "TURN_RIGHT": 0
+          }
+        },
+        {
+          "episode_id": "96",
+          "trajectory_id": "1154",
+          "prompt": "Walk straight into the bedroom and around the bed. At the end of the bed take a left, and stop in front of the bathroom door.",
+          "steps": 40,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 12.468791961669922,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 31,
+            "TURN_LEFT": 6,
+            "TURN_RIGHT": 2
+          }
+        }
+      ],
+      "active_stop_rate": 1.0,
+      "successful_episode_ids": [
+        "327"
+      ],
+      "mean_num_steps": 35.666666666666664,
+      "success_change_vs_v1": 0.0,
+      "spl_change_vs_v1": 0.009900304889505662,
+      "distance_change_vs_v1": 1.7587600747744245
+    },
+    "stop_aware_epoch_04": {
+      "checkpoint_name": "stop_aware_epoch_04",
+      "checkpoint_path": "/home/mystery/habitat-work/checkpoints_stop_aware/vln_stop_aware_epoch_04.pth",
+      "checkpoint_epoch": 4,
+      "validation_loss": 1.0208698966105778,
+      "validation_accuracy": 0.5833333333333334,
+      "num_episodes": 6,
+      "average_success": 0.0,
+      "average_spl": 0.0,
+      "average_distance_to_goal": 9.837231794993082,
+      "episodes": [
+        {
+          "episode_id": "97",
+          "trajectory_id": "1154",
+          "prompt": "Walk past curved sofa. Walk past bed. Wait at bathroom door threshold.",
+          "steps": 26,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 9.022568702697754,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 17,
+            "TURN_LEFT": 5,
+            "TURN_RIGHT": 3
+          }
+        },
+        {
+          "episode_id": "328",
+          "trajectory_id": "3228",
+          "prompt": "Walk past  living room, walk past dining room, turn right, wait by gold room.",
+          "steps": 37,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 10.389861106872559,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 9,
+            "TURN_LEFT": 18,
+            "TURN_RIGHT": 9
+          }
+        },
+        {
+          "episode_id": "95",
+          "trajectory_id": "1154",
+          "prompt": "Enter the bedroom, wait at the door to the bathroom.",
+          "steps": 29,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 9.187202453613281,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 18,
+            "TURN_LEFT": 6,
+            "TURN_RIGHT": 4
+          }
+        },
+        {
+          "episode_id": "327",
+          "trajectory_id": "3228",
+          "prompt": "Turn left and go passed the painting. Continue passed the bar and turn right and then go through the left doorway.",
+          "steps": 34,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 10.242506980895996,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 8,
+            "TURN_LEFT": 17,
+            "TURN_RIGHT": 8
+          }
+        },
+        {
+          "episode_id": "326",
+          "trajectory_id": "3228",
+          "prompt": "Turn to the left and walk through the living room to the breakfast bar and dinning room. Walk through the dinning room and to the dark framed door on the left side of an alcove. Walk to the entrance of the dark framed door that opens to a gold seating area.",
+          "steps": 31,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 10.994049072265625,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 13,
+            "TURN_LEFT": 17,
+            "TURN_RIGHT": 0
+          }
+        },
+        {
+          "episode_id": "96",
+          "trajectory_id": "1154",
+          "prompt": "Walk straight into the bedroom and around the bed. At the end of the bed take a left, and stop in front of the bathroom door.",
+          "steps": 29,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 9.187202453613281,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 18,
+            "TURN_LEFT": 6,
+            "TURN_RIGHT": 4
+          }
+        }
+      ],
+      "active_stop_rate": 1.0,
+      "successful_episode_ids": [],
+      "mean_num_steps": 31.0,
+      "success_change_vs_v1": -0.16666666666666666,
+      "spl_change_vs_v1": -0.156766361777161,
+      "distance_change_vs_v1": 1.9013745784759513
+    },
+    "stop_aware_epoch_05": {
+      "checkpoint_name": "stop_aware_epoch_05",
+      "checkpoint_path": "/home/mystery/habitat-work/checkpoints_stop_aware/vln_stop_aware_epoch_05.pth",
+      "checkpoint_epoch": 5,
+      "validation_loss": 1.1038291066884995,
+      "validation_accuracy": 0.5866666666666667,
+      "num_episodes": 6,
+      "average_success": 0.16666666666666666,
+      "average_spl": 0.16666666666666666,
+      "average_distance_to_goal": 6.825338363647461,
+      "episodes": [
+        {
+          "episode_id": "97",
+          "trajectory_id": "1154",
+          "prompt": "Walk past curved sofa. Walk past bed. Wait at bathroom door threshold.",
+          "steps": 29,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 9.232144355773926,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 18,
+            "TURN_LEFT": 6,
+            "TURN_RIGHT": 4
+          }
+        },
+        {
+          "episode_id": "328",
+          "trajectory_id": "3228",
+          "prompt": "Walk past  living room, walk past dining room, turn right, wait by gold room.",
+          "steps": 96,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 3.827017068862915,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 18,
+            "TURN_LEFT": 76,
+            "TURN_RIGHT": 1
+          }
+        },
+        {
+          "episode_id": "95",
+          "trajectory_id": "1154",
+          "prompt": "Enter the bedroom, wait at the door to the bathroom.",
+          "steps": 44,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 12.682403564453125,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 32,
+            "TURN_LEFT": 8,
+            "TURN_RIGHT": 3
+          }
+        },
+        {
+          "episode_id": "327",
+          "trajectory_id": "3228",
+          "prompt": "Turn left and go passed the painting. Continue passed the bar and turn right and then go through the left doorway.",
+          "steps": 47,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 4.060193061828613,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 17,
+            "TURN_LEFT": 28,
+            "TURN_RIGHT": 1
+          }
+        },
+        {
+          "episode_id": "326",
+          "trajectory_id": "3228",
+          "prompt": "Turn to the left and walk through the living room to the breakfast bar and dinning room. Walk through the dinning room and to the dark framed door on the left side of an alcove. Walk to the entrance of the dark framed door that opens to a gold seating area.",
+          "steps": 59,
+          "stopped": true,
+          "success": 1.0,
+          "spl": 1.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 1.9181277751922607,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 26,
+            "TURN_LEFT": 28,
+            "TURN_RIGHT": 4
+          }
+        },
+        {
+          "episode_id": "96",
+          "trajectory_id": "1154",
+          "prompt": "Walk straight into the bedroom and around the bed. At the end of the bed take a left, and stop in front of the bathroom door.",
+          "steps": 29,
+          "stopped": true,
+          "success": 0.0,
+          "spl": 0.0,
+          "oracle_success": 0.0,
+          "distance_to_goal": 9.232144355773926,
+          "ndtw": 0.0,
+          "sdtw": 0.0,
+          "action_histogram": {
+            "STOP": 1,
+            "MOVE_FORWARD": 18,
+            "TURN_LEFT": 6,
+            "TURN_RIGHT": 4
+          }
+        }
+      ],
+      "active_stop_rate": 1.0,
+      "successful_episode_ids": [
+        "326"
+      ],
+      "mean_num_steps": 50.666666666666664,
+      "success_change_vs_v1": 0.0,
+      "spl_change_vs_v1": 0.009900304889505662,
+      "distance_change_vs_v1": -1.11051885286967
+    }
+  }
+}

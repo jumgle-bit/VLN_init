@@ -1,0 +1,41 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+*~
+
+# Habitat-Lab upstream repository
+habitat-lab/
+
+# Datasets and licensed scene assets
+data/
+*.glb
+*.navmesh
+
+# Collected training trajectories
+vln_expert_data/
+vln_dagger_data/
+vln_dagger_data_v2/
+*.npz
+
+# Intermediate checkpoints
+checkpoints/
+checkpoints_dagger/
+checkpoints_dagger_v2/
+checkpoints_stop_aware/
+
+# Rendered images and videos
+output/
+output_*/
+*.avi
+*.mp4
+
+# Logs and temporary files
+*.log
+*.tmp

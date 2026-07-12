@@ -1,0 +1,127 @@
+[
+  {
+    "epoch": 1,
+    "learning_rate": 0.0002,
+    "checkpoint_path": "/home/mystery/habitat-work/checkpoints_stop_aware/vln_stop_aware_epoch_01.pth",
+    "train": {
+      "loss": 0.64916629878476,
+      "accuracy": 0.7570735090152566,
+      "per_class_accuracy": {
+        "STOP": 0.6380090497737556,
+        "MOVE_FORWARD": 0.775187969924812,
+        "TURN_LEFT": 0.7684709600948242,
+        "TURN_RIGHT": 0.723604925334032
+      }
+    },
+    "validation": {
+      "loss": 0.9639623020092646,
+      "accuracy": 0.6066666666666667,
+      "per_class_accuracy": {
+        "STOP": 0.5,
+        "MOVE_FORWARD": 0.8024691358024691,
+        "TURN_LEFT": 0.3888888888888889,
+        "TURN_RIGHT": 0.35
+      }
+    }
+  },
+  {
+    "epoch": 2,
+    "learning_rate": 0.0002,
+    "checkpoint_path": "/home/mystery/habitat-work/checkpoints_stop_aware/vln_stop_aware_epoch_02.pth",
+    "train": {
+      "loss": 0.5662931961114628,
+      "accuracy": 0.7913314840499307,
+      "per_class_accuracy": {
+        "STOP": 0.746606334841629,
+        "MOVE_FORWARD": 0.8033834586466165,
+        "TURN_LEFT": 0.8028447254049783,
+        "TURN_RIGHT": 0.7618548598375687
+      }
+    },
+    "validation": {
+      "loss": 0.9656210283438365,
+      "accuracy": 0.64,
+      "per_class_accuracy": {
+        "STOP": 0.5,
+        "MOVE_FORWARD": 0.8209876543209876,
+        "TURN_LEFT": 0.5,
+        "TURN_RIGHT": 0.3333333333333333
+      }
+    }
+  },
+  {
+    "epoch": 3,
+    "learning_rate": 0.0002,
+    "checkpoint_path": "/home/mystery/habitat-work/checkpoints_stop_aware/vln_stop_aware_epoch_03.pth",
+    "train": {
+      "loss": 0.4988336386569826,
+      "accuracy": 0.8180998613037448,
+      "per_class_accuracy": {
+        "STOP": 0.8009049773755657,
+        "MOVE_FORWARD": 0.812781954887218,
+        "TURN_LEFT": 0.8380086922165152,
+        "TURN_RIGHT": 0.8001047943411056
+      }
+    },
+    "validation": {
+      "loss": 0.953903071085612,
+      "accuracy": 0.6133333333333333,
+      "per_class_accuracy": {
+        "STOP": 0.5,
+        "MOVE_FORWARD": 0.8148148148148148,
+        "TURN_LEFT": 0.4166666666666667,
+        "TURN_RIGHT": 0.31666666666666665
+      }
+    }
+  },
+  {
+    "epoch": 4,
+    "learning_rate": 0.0002,
+    "checkpoint_path": "/home/mystery/habitat-work/checkpoints_stop_aware/vln_stop_aware_epoch_04.pth",
+    "train": {
+      "loss": 0.4347321477743194,
+      "accuracy": 0.8466712898751734,
+      "per_class_accuracy": {
+        "STOP": 0.8461538461538461,
+        "MOVE_FORWARD": 0.8421052631578947,
+        "TURN_LEFT": 0.8666534966416436,
+        "TURN_RIGHT": 0.8265653654702646
+      }
+    },
+    "validation": {
+      "loss": 1.0208698966105778,
+      "accuracy": 0.5833333333333334,
+      "per_class_accuracy": {
+        "STOP": 0.5,
+        "MOVE_FORWARD": 0.6975308641975309,
+        "TURN_LEFT": 0.5416666666666666,
+        "TURN_RIGHT": 0.3333333333333333
+      }
+    }
+  },
+  {
+    "epoch": 5,
+    "learning_rate": 0.0001,
+    "checkpoint_path": "/home/mystery/habitat-work/checkpoints_stop_aware/vln_stop_aware_epoch_05.pth",
+    "train": {
+      "loss": 0.3883507389394404,
+      "accuracy": 0.8675450762829403,
+      "per_class_accuracy": {
+        "STOP": 0.8778280542986425,
+        "MOVE_FORWARD": 0.8580827067669173,
+        "TURN_LEFT": 0.8901619913077835,
+        "TURN_RIGHT": 0.8501440922190202
+      }
+    },
+    "validation": {
+      "loss": 1.1038291066884995,
+      "accuracy": 0.5866666666666667,
+      "per_class_accuracy": {
+        "STOP": 0.5,
+        "MOVE_FORWARD": 0.6296296296296297,
+        "TURN_LEFT": 0.6944444444444444,
+        "TURN_RIGHT": 0.35
+      }
+    }
+  }
+]

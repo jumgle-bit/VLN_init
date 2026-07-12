@@ -1,0 +1,44 @@
+{
+  "training_method": "stop_aware_dagger",
+  "parent_checkpoint": "/home/mystery/habitat-work/checkpoints_dagger/vln_dagger_best_accuracy.pth",
+  "num_epochs": 5,
+  "initial_learning_rate": 0.0002,
+  "weight_decay": 1e-05,
+  "stop_weight": 6.0,
+  "class_weights": [
+    6.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "random_seed": 168,
+  "data_counts": {
+    "expert_trajectories": 75,
+    "dagger_v1_trajectories": 75,
+    "dagger_v2_trajectories": 75,
+    "training_trajectories": 225,
+    "validation_trajectories": 6,
+    "expert_steps": 3207,
+    "dagger_v1_steps": 4131,
+    "dagger_v2_steps": 7082,
+    "training_steps": 14420
+  },
+  "action_counts": {
+    "STOP": 221,
+    "MOVE_FORWARD": 5320,
+    "TURN_LEFT": 5062,
+    "TURN_RIGHT": 3817
+  },
+  "initial_validation": {
+    "loss": 1.02376826385657,
+    "accuracy": 0.6233333333333333,
+    "per_class_accuracy": {
+      "STOP": 0.3333333333333333,
+      "MOVE_FORWARD": 0.8024691358024691,
+      "TURN_LEFT": 0.4305555555555556,
+      "TURN_RIGHT": 0.4
+    }
+  },
+  "validation_used_for_gradients": false,
+  "checkpoints_saved_every_epoch": true
+}
